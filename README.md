@@ -1,6 +1,24 @@
 # rust-reflector
 
 ````rust
+use reflect_macro::MyTrait;
+
+use reflect_type_utilities::{MyTrait,ObjectType,HashMap};
+
+#[derive(MyTrait,Debug)]
+struct Data6{
+    num:i32,
+    f:f64
+}
+
+
+#[derive(MyTrait,Debug)]
+struct Person{
+    num:i32,
+    age:i32,
+    name:String
+}
+
 fn main() {
     let mut map:HashMap<String,ObjectType>  = HashMap::new();
     map.insert("num".to_string(), ObjectType::INT(1024));
