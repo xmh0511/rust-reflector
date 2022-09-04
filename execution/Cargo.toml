@@ -1,0 +1,10 @@
+[package]
+name = "execution"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reflect-macro={path="../reflect-macro"}
+reflect-type-utilities={path="../reflect-type-utilities"}
